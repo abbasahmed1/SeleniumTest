@@ -45,6 +45,7 @@ public class AppTest
 		//WebDriverManager.chromedriver().setup();
 		
 		System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+		driver = new ChromeDriver();
 		//ChromeOptions opt = new ChromeOptions();
 		//opt.setHeadless(true);
 		//driver = new ChromeDriver(opt);
