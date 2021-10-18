@@ -30,7 +30,7 @@ public void SelectedItem() throws InterruptedException {
 	driver.findElement(addToCart).click();
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 
-	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'View cart')]")));
+//	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'View cart')]")));
 	driver.findElement(viewCart).click();
 	
 }

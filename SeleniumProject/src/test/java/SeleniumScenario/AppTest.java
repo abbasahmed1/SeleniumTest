@@ -5,8 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 
@@ -43,11 +42,12 @@ public class AppTest
 	public void OpenChrome () {
 
 
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions opt = new ChromeOptions();
-		opt.setHeadless(true);
-		//System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver(opt);
+		//WebDriverManager.chromedriver().setup();
+		
+		System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+		//ChromeOptions opt = new ChromeOptions();
+		//opt.setHeadless(true);
+		//driver = new ChromeDriver(opt);
 		driver.manage().window().maximize();
 		driver.get("https://shop.demoqa.com/");
 		//driver.navigate().to("https://shop.demoqa.com/");

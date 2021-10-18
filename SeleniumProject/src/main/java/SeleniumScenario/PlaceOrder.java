@@ -46,7 +46,7 @@ public class PlaceOrder {
 		
 		Thread.sleep(5000);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement elemen = wait.until(ExpectedConditions.elementToBeClickable(By.id("terms")));
+	//	WebElement elemen = wait.until(ExpectedConditions.elementToBeClickable(By.id("terms")));
 		WebElement Term = driver.findElement(By.id("terms"));
 		Term.click();
 		
